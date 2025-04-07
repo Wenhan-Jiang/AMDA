@@ -2,8 +2,8 @@ import math
 import torch
 from torch.optim.optimizer import Optimizer
 
-class AdamDA(Optimizer):
-    r"""Implements  AdamDA: An Adaptive Moment Estimation with Dual Averaging for Training Deep Neural Networks.
+class AMDA(Optimizer):
+    r"""Implements  AMDA: Adaptive momentum dual averaging algorithm for accelerating deep network models.
 
     Arguments:
         params (iterable): iterable of parameters to optimize or dicts defining parameter groups
@@ -29,7 +29,7 @@ class AdamDA(Optimizer):
 
         defaults = dict(lr=lr, momentum=momentum, eps=eps, weight_decay=weight_decay, grad_sq_factor=grad_sq_factor,
                         amsgrad=amsgrad, weight_decouple=weight_decouple)
-        super(AdamDA, self).__init__(params, defaults)
+        super(AMDA, self).__init__(params, defaults)
 
     def step(self, closure=None):
         """Performs a single optimization step."""

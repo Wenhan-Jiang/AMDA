@@ -1,2 +1,2 @@
-# AdamDA
+# AMDA
 Optimizer

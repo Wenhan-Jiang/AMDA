@@ -1,5 +1,5 @@
 # Optimizer AMDA
-#Example
+
 from AMDA import AMDA
 
 # villa AMDA

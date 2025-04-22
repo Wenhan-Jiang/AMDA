@@ -8,12 +8,12 @@ class AMDA(Optimizer):
     Arguments:
         params (iterable): iterable of parameters to optimize or dicts defining parameter groups
         lr (float, optional): learning rate α (default: 1e-3)
-        momentum (float, optional): momentum parameter (default: 0.9)
+        momentum (float, optional): first momentum parameter (default: 0.9)
         eps (float, optional): term added to the denominator to improve numerical stability (default: 1e-8)
         weight_decay (float, optional): weight decay (L2 penalty) (default: 0)
-        grad_sq_factor (float, optional): factor for scaling gradient square accumulation (default: 2.5e-4)
+        grad_sq_factor (float, optional): factor for scaling gradient square accumulation (default: 2.5e-4) (or default:30)
         amsgrad (bool, optional): whether to use the AMSGrad variant (default: False)
-        weight_decouple(bool, optional): whether to use the AdamDA-W variant (default: False)
+        weight_decouple(bool, optional): whether to use the AMDA-W variant (default: False)
     """
 
     def __init__(self, params, lr=1e-3, momentum=0.9, eps=1e-8, weight_decay=0, grad_sq_factor=2.5e-4,

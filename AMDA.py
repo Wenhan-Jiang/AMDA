@@ -3,7 +3,7 @@ import torch
 from torch.optim.optimizer import Optimizer
 
 class AMDA(Optimizer):
-    r"""Implements  AMDA: Adaptive Moment Dual Averaging Algorithm for Accelerating Deep Network Models.
+    r"""Implements  AMDA: Adaptive Moment Dual Averaging Algorithm for Faster Optimizing Deep Network Models.
 
     Arguments:
         params (iterable): iterable of parameters to optimize or dicts defining parameter groups
